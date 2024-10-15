@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glassmorphism Css Generator</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <h1><i class="bi bi-code-square"></i> Glassmorphism CSS Generator</h1>
+      <i class="icon bi-plus-circle-dotted"></i>
+    </header>
+    <section class="main-container" style="background-image: --img ;">
+      <!-- [Dropdown menu] -->
+       <div class="Dropdown-container">
+        <details>
+          <summary class="summary">Black And White</summary>
+        <div class="bg">background - 1</div>
+        <div class="bg">background - 2</div>
+        <div class="bg">background - 3</div>
+        <div class="bg">background - 4</div>
+        <div class="bg">background - 5</div>
+        <div class="bg">background - 6</div>
+        </details>
+        <details>
+          <summary class="summary">Gradient Type</summary>
+        <div class="bg">background - 7</div>
+        <div class="bg">background - 8</div>
+        <div class="bg">background - 9</div>
+        <div class="bg">background - 10</div>
+        <div class="bg">background - 11</div>
+        <div class="bg">background - 12</div>
+        <div class="bg">background - 13</div>
+        <div class="bg">background - 14</div>
+        <div class="bg">background - 15</div>
+        </details>
+        
+       </div>
+      <div class="show-container">
+        <div class="square squareA">Hello 👋</div>
+        <div class="login">
+          <h1>Login</h1>
+          <form >
+            <label for="uname"></label>
+            <input
+              type="text"
+              name="uname"
+              id="uname"
+              placeholder="User name"
+              readonly
+            />
+            <label for="pwd"></label>
+            <input
+              type="text"
+              name="pwd"
+              id="pwd"
+              placeholder="Password"
+              readonly
+            />
+            <button>Submit</button>
+          </form>
+        </div>
+        <div class="square squareB">World 🌏</div>
+      </div>
+      <div class="generate-container">
+        <div class="settings">
+          <h3>Settings</h3>
+          <div class="slider-container">
+            <div class="slider-0 slider">
+              <div class="title-container">
+                <span class="title" id="title">Transparency</span>
+                <span class="value-show" id="value-0">0.05</span>
+              </div>
+              <input id="slider-0" type="range" min="0" max="20" value="3" />
+            </div>
+            <div class="slider-1 slider">
+              <div class="title-container">
+                <span class="title" id="title">Blur Value</span>
+                <span class="value-show" id="value-1">4</span>
+              </div>
+              <input id="slider-1" type="range" min="0" max="40" value="8" />
+            </div>
+            <div class="slider-2 slider">
+              <div class="title-container">
+                <span class="title" id="title">Border Transparency</span>
+                <span class="value-show" id="value-2">0.05</span>
+              </div>
+              <input id="slider-2" type="range" min="0" max="20" value="1" />
+            </div>
+          </div>
+          <div class="colorPick-container">
+            <div class="colorPicker">
+              <input type="color" id="colorInput" value="#ffffff" />
+            </div>
+            <p>Color Picker</p>
+            <div class="shadowColor">
+              <input type="color" id="shadowColor" />
+            </div>
+            <p>Shadow Color</p>
+          </div>
+
+        </div>
+        <div class="code-show">
+          <h3>CSS Code</h3>
+          <div class="copy-codes">
+            <code>
+              <p id="text">
+                background: rgba( <span id="rgb">250, 250, 250</span>,<span
+                  id="tcy-0"
+                >
+                  0.25 </span
+                >);
+                <br />
+                box-shadow: 1px 1px 15px 1px  rgba(  <span id="sdColor">0, 0, 0</span>, <span
+                id="tcy-2"
+              >
+                0.25 </span
+              >);
+                <br />
+                backdrop-filter: blur( <span id="blurOne">4</span>px );
+                <br />
+                -webkit-backdrop-filter: blur( <span id="blurTwo">4</span>px );
+                <br />
+                border-radius: 10px;
+                <br />
+                border: 1px solid rgba( 255, 255, 255,
+                <span id="tcy-1">0.05 </span> );
+              </p>
+            </code>
+            <div class="copied">Copied</div>
+            <div class="copy">Click to Copy</div>
+            <button id="copy-btn" style="--x: 0; --y: 0">
+              <i class="bi bi-clipboard2-plus"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <h3>
+        Copyright <span id="date">2024</span> © Athul. All Rights Reserved.
+      </h3>
+      <div class="social">
+        <a href="https://www.instagram.com/d9.coder">
+          <i class="bi bi-instagram"></i
+        ></a>
+        <a href="https://github.com/psathul073"><i class="bi bi-github"></i></a>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
